@@ -2,6 +2,8 @@ import Link from "next/link";
 import Logo from "/public/images/logo.png";
 import Image from "next/image";
 import Styles from "./header.module.scss";
+import "../button/button.module.scss";
+import Button from "../button/page";
 
 const Header = () => {
     return (
@@ -17,9 +19,7 @@ const Header = () => {
             </div>
 
             <div className={Styles.action}>
-                <button className={Styles.button}>
-                    Fale conosco
-                </button>
+                <Button title="Fale conosco"/>
             </div>
         </div>
     )
